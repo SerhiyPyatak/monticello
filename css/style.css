@@ -1,0 +1,851 @@
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+figcaption,
+figure {
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Show the overflow in Edge.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+}
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Add the correct display in IE 9-.
+ */
+menu {
+  display: block;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+@font-face {
+  font-family: "gothambold1";
+  src: url("../fonts/gothambold/gothambold1.eot");
+  src: local("gothambold1"), url("../fonts/gothambold/gothambold1.woff") format("woff"), url("../fonts/gothambold/gothambold1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/GothamBook/GothamBook.eot");
+  src: local("GothamBook"), url("../fonts/GothamBook/GothamBook.woff") format("woff"), url("../fonts/GothamBook/GothamBook.ttf") format("truetype");
+}
+@font-face {
+  font-family: "gotham_medium_regular";
+  src: url("../fonts/Gotham Medium Regular/gotham-medium-webfont.woff2") format("woff2"), url("../fonts/Gotham Medium Regular/gotham-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gothamlight";
+  src: url("../fonts/Gotham Light Regular/gotham_light_regular-webfont.woff2") format("woff2"), url("../fonts/Gotham Light Regular/gotham_light_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/header/header-background-with-gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.header__navbar {
+  width: 100%;
+  height: 164px;
+  padding: 0 215px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header__logo {
+  height: 100%;
+  width: 270px;
+  background-image: url("../images/header/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+  width: 100%;
+  height: 130px;
+}
+.header__title {
+  font-family: "gothambold1" !important;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 18px;
+}
+.header__slogan {
+  font-family: "GothamBook" !important;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.projects {
+  width: 100%;
+  height: auto;
+}
+.projects__hero {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.projects__title {
+  text-transform: uppercase;
+  font-family: "gothambold1" !important;
+  font-size: 33px;
+  color: #2c4058;
+}
+.projects__rule-divider {
+  border: 1px solid #2c4058;
+}
+.projects__card {
+  width: 100%;
+  height: 540px;
+  margin-bottom: 140px;
+  display: flex;
+}
+.projects__outline {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.projects__outline:nth-child(even) {
+  justify-content: flex-end;
+}
+.projects__imgarea {
+  width: 630px;
+  height: 470px;
+}
+.projects__imgarea_even {
+  background-color: #55b7ff;
+}
+.projects__imgarea_odd {
+  background-color: #7e5aff;
+}
+.projects__photo {
+  position: relative;
+  width: 630px;
+  height: auto;
+}
+.projects__photo_even {
+  top: 70px;
+  left: 215px;
+}
+.projects__photo_odd {
+  top: 70px;
+  right: 215px;
+}
+.projects__description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 70px;
+}
+.projects__description:nth-child(odd) {
+  align-items: flex-end;
+}
+.projects__slogan {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2c4058;
+  font-family: "GothamBook" !important;
+  margin-top: 58px;
+  width: 470px;
+}
+.projects__name {
+  font-family: "gothambold1" !important;
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin-top: 15px;
+  width: 470px;
+}
+.projects__overwiev {
+  width: 470px;
+  margin-top: 36px;
+  font-family: "gothamlight" !important;
+  line-height: 30px;
+  color: #7b818a;
+  font-size: 18px;
+}
+.projects__linkbutton-container {
+  width: 470px;
+  margin-top: 40px;
+  height: 50px;
+}
+.projects__location {
+  margin-top: 60px;
+  width: 470px;
+  font-family: "GothamBook" !important;
+  font-size: 17px;
+  font-style: italic;
+  color: #2c4058;
+}
+
+.rule-divider {
+  height: 2px;
+  width: 100px;
+}
+
+.linkbutton {
+  display: block;
+  height: 50px;
+  width: 190px;
+  border: 1px solid #2c4058;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "GothamBook" !important;
+  font-size: 13px;
+  color: #808c9b;
+  padding: 20px 40px;
+}
+
+.news {
+  width: 100%;
+  height: 1035px;
+  background-image: url("../images/news/news-background-with-gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 138px 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news__rule-divider {
+  border: 1px solid #fff;
+}
+.news__title {
+  margin-top: 40px;
+  font-family: "gotham_medium_regular" !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 34px;
+}
+.news__slider {
+  width: 1410px;
+  margin-top: 100px;
+}
+.news__slide {
+  width: 370px;
+  height: 540px;
+  background-color: #fff;
+}
+
+.slide__photo {
+  width: 100%;
+  height: 245px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide__content {
+  width: 100%;
+  height: 273px;
+  padding: 24px;
+}
+.slide__header {
+  font-family: "gothambold1" !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 35px;
+  color: #2c4058;
+}
+.slide__text {
+  font-family: "gothamlight" !important;
+  line-height: 28px;
+  color: #4b5562;
+  font-size: 15px;
+  margin-top: 22px;
+}
+.slide__author {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.slide__author-photo {
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide__author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+.slide__author-name {
+  text-transform: uppercase;
+  font-family: "GothamBook" !important;
+  font-size: 16px;
+  color: #2c4058;
+}
+.slide__publication {
+  font-family: "GothamBook" !important;
+  font-size: 14px;
+  color: #41b7ff;
+}
+
+#first-slide, #fourth-slide {
+  background-image: url("../images/news/news1.png");
+}
+
+#second-slide, #fifth-slide {
+  background-image: url("../images/news/news2.png");
+}
+
+#third-slide {
+  background-image: url("../images/news/news3.png");
+}
+
+#author-first, #author-fourth {
+  background-image: url("../images/news/news1-author.png");
+}
+
+#author-second, #author-fifth {
+  background-image: url("../images/news/news2-author.png");
+}
+
+#author-third {
+  background-image: url("../images/news/news3-author.png");
+}
+
+.gallery {
+  width: 100%;
+  height: 1000px;
+  padding: 140px 215px;
+}
+.gallery__hero {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery__rule-divider {
+  border: 1px solid #2c4058;
+}
+.gallery__title {
+  font-family: "gotham_medium_regular" !important;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #2c4058;
+}
+
+.footer {
+  width: 100%;
+  height: 525px;
+  background-image: url("../images/footer/footer-babckground-image-with-gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
