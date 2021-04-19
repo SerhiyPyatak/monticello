@@ -703,7 +703,8 @@ body * {
   font-family: "GothamBook" !important;
   font-size: 13px;
   color: #808c9b;
-  padding: 20px 40px;
+  padding: 18px 40px;
+  text-align: center;
 }
 
 .news {
@@ -834,13 +835,6 @@ body * {
   background-image: url("../images/news/news5-author.png");
 }
 
-/*.slider {
-    &__item {
-        width:              370px;
-        height:             540px;
-        margin: 0 30px;
-    }
-}*/
 .gallery {
   width: 100%;
   height: 1000px;
@@ -863,6 +857,68 @@ body * {
   font-size: 30px;
   color: #2c4058;
 }
+.gallery__album {
+  width: 1170px;
+  height: 440px;
+  display: flex;
+  gap: 12px;
+  margin: auto;
+  margin-top: 70px;
+}
+.gallery__left-pane {
+  height: 100%;
+  width: 49%;
+  background-image: url("../images/gallery/panorama.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__right-pane {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.gallery__mosaic {
+  width: 285px;
+  height: 215px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery__linkbutton-container {
+  width: 100%;
+  margin-top: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#gallery-top-left {
+  background-image: url("../images/gallery/top-left.png");
+}
+
+#gallery-top-right {
+  background-image: url("../images/gallery/top-right.png");
+}
+
+#gallery-bottom-right {
+  background-image: url("../images/gallery/bottom-right.png");
+}
+
+#gallery-bottom-left {
+  background-image: url("../images/gallery/bottom-left.png");
+}
+
+.contact {
+  width: 100%;
+  height: 700px;
+  background-image: url("../images/contact/contact-backgnd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .footer {
   width: 100%;
@@ -870,6 +926,30 @@ body * {
   background-image: url("../images/footer/footer-babckground-image-with-gradient.png");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__logo {
+  width: 250px;
+  height: auto;
+}
+.footer__content {
+  width: 770px;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.footer__text {
+  font-family: "GothamBook" !important;
+  color: #fff;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
