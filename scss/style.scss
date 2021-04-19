@@ -509,4 +509,23 @@ body * {
         color:                  #fff;
         font-size:              12px;
     }
+
+    &__socialnets {
+        width:              170px;
+        height:             100%;
+        display:            flex;
+        align-items:        center;
+        justify-content:    space-between;
+    }
+
+    &__social-logo {
+        width:              43px;
+        height:             43px;
+        border:             1px solid rgb(175, 163, 254);
+        border-radius:      50%;
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+        color:              #fff;
+    }
 }

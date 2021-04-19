@@ -951,5 +951,22 @@ body * {
   color: #fff;
   font-size: 12px;
 }
+.footer__socialnets {
+  width: 170px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__social-logo {
+  width: 43px;
+  height: 43px;
+  border: 1px solid #afa3fe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
