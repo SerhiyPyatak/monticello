@@ -1,5 +1,6 @@
 'use strict';
 
+let MAP_ICON = "../images/contact/map-pin.png";
 $(document).ready(function () {
   $('.news__slider').slick({
     slidesToShow: 3,
@@ -22,7 +23,7 @@ $(document).ready(function () {
   }).addTo(contactMap);
 
   var contactIcon = L.icon({
-    iconUrl: 'map-pin.png',
+    iconUrl: MAP_ICON,
 
     iconSize: [106, 106], // size of the icon
     iconAnchor: [53, 53], // point of the icon which will correspond to marker's location
