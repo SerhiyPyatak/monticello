@@ -795,23 +795,23 @@ body * {
   color: #41b7ff;
 }
 
-#first-slide {
+.first-slide {
   background-image: url("../images/news/news1.png");
 }
 
-#second-slide {
+.second-slide {
   background-image: url("../images/news/news2.png");
 }
 
-#third-slide {
+.third-slide {
   background-image: url("../images/news/news3.png");
 }
 
-#fourth-slide {
+.fourth-slide {
   background-image: url("../images/news/news4.png");
 }
 
-#fifth-slide {
+.fifth-slide {
   background-image: url("../images/news/news5.png");
 }
 

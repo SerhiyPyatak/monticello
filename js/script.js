@@ -1,14 +1,15 @@
 'use strict';
 
-let MAP_ICON = '../images/contact/map-pin.png';
+let MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
 $(document).ready(function () {
+	console.log(window.location);
   $('.news__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     dots: true,
-    infinite: true,
+    //infinite: true,
   });
 
   let contactMap = L.map('contact-map').setView([40.6571222, -73.8429989], 12);
