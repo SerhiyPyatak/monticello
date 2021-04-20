@@ -1,6 +1,6 @@
 'use strict';
 
-const MARKER_IMAGE_RELATIVE_PATH = '../images/contact/map-pin.png';
+const MARKER_IMAGE_RELATIVE_PATH = '/images/contact/map-pin.png';
 $(document).ready(function () {
   $('.news__slider').slick({
     slidesToShow: 3,
