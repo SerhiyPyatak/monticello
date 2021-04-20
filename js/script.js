@@ -1,6 +1,6 @@
 'use strict';
 
-let MAP_ICON = "../images/contact/map-pin.png";
+let MAP_ICON = '../images/contact/map-pin.png';
 $(document).ready(function () {
   $('.news__slider').slick({
     slidesToShow: 3,

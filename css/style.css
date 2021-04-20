@@ -918,6 +918,38 @@ body * {
   background-image: url("../images/contact/contact-backgnd.png");
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+.contact__form {
+  position: absolute;
+  width: 770px;
+  height: 450px;
+  background-color: #fff;
+  z-index: 2;
+  top: 4900px;
+  padding: 60px;
+}
+.contact__hero {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__rule-divider {
+  border: 1px solid #2c4058;
+}
+.contact__title {
+  font-family: "gotham_medium_regular" !important;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #2c4058;
+}
+.contact__form-content {
+  width: 100%;
+  height: 210px;
+  margin-top: 45px;
 }
 
 .footer {
