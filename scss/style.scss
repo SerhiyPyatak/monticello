@@ -92,6 +92,26 @@ body * {
         text-transform:     uppercase;
         letter-spacing:     8px;
     }
+
+    &__shevron {
+        display:            block;
+        border:             1px solid rgb(203, 221, 251);
+        width:              50px;
+        height:             50px;
+        align-self:         center;
+        border-radius:      50%;
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+        color:              #fff;
+        text-decoration:    none;
+        padding:            7px;
+        transition:         padding-top .35s ease-in-out;
+
+        &:hover {
+            padding-top:    15px;
+        }
+    }
 }
 
 .projects {
@@ -509,6 +529,56 @@ body * {
         width:              100%;
         height:             210px;
         margin-top:         45px;
+        display:            flex;
+        gap:                20px;
+        justify-content:    center;
+    }
+
+    &__author-info {
+        width:              48%;
+        height:             100%;
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    space-between;
+        font-size:          16px;
+        font-family:        'GothamBook' !important;
+        color:              rgb(44, 64, 88);
+    }
+
+    &__contragent-info {
+        width:              48%;
+        height:             100%;
+        display:            flex;
+        flex-direction:     column;
+        align-items:        flex-end;
+        gap:                30px;
+    }
+
+    &__glyph {
+        color:              rgb(126, 90, 255);
+    }
+
+    &__input {
+        width:              100%;
+        height:             40px;
+        border-top:         none;
+        border-right:       none;
+        border-left:        none;
+        border-bottom:      1px solid rgb(213, 217, 222);
+        font-family:        'GothamBook' !important;
+
+        &:focus {
+            border-bottom:      2px solid rgb(44, 64, 88);
+            color:              rgb(44, 64, 88);
+        }
+    }
+
+    &__submit {
+        width:              140px;
+        height:             50px;
+        text-transform:     uppercase;
+        font-family:        'GothamBook' !important;
+        color:              rgb(44, 64, 88);
     }
 }
 

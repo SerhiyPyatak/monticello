@@ -1,8 +1,14 @@
 'use strict';
 
-let MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
+let MAP_ICON;
 $(document).ready(function () {
 	console.log(window.location);
+  if (window.location.hostname==='127.0.0.1' || window.location.hostname==='localhost') {
+    MAP_ICON = '../images/contact/map-pin.png';
+  } else {
+    MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
+  };
+
   $('.news__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,

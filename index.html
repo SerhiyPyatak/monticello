@@ -28,9 +28,13 @@
         <h1 class="header__title">simple &amp; modern</h1>
         <h2 class="header__slogan">we makes the world's beautiful every day</h2>
       </div>
+
+      <a class="header__shevron" href="#projects">
+        <i class="fas fa-chevron-down"></i>
+      </a>
     </header>
     <main>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="projects__hero">
           <div class="projects__rule-divider rule-divider"></div>
           <h2 class="projects__title">what we do</h2>
@@ -207,13 +211,35 @@
       <section class="contact" id="contact-map"></section>
     </main>
     <footer class="footer">
-      <form class="contact__form" action="">
+      <form class="contact__form" action="" method="GET">
         <div class="contact__hero">
           <div class="contact__rule-divider rule-divider"></div>
           <h2 class="contact__title">get in touch</h2>
         </div>
         <div class="contact__form-content">
-          <div class="contact__author-info"></div>
+          <div class="contact__author-info">
+            <p class="author-data">
+              <i class="fas fa-map-marker-alt contact__glyph"></i>
+              &nbsp;91 Nolan Extensions Suite 670
+            </p>
+            <p class="author-data">
+              <i class="fas fa-phone-alt contact__glyph"></i>
+              &nbsp;+001 356-863-2454
+            </p>
+            <p class="author-data">
+              <i class="fas fa-envelope-open-text contact__glyph"></i>
+              &nbsp;gahuy93@gmail.com
+            </p>
+            <p class="author-data">
+              <i class="far fa-clock contact__glyph"></i>
+              &nbsp;From 07:05AM to 19:30PM
+            </p>
+          </div>
+          <div class="contact__contragent-info">
+            <input type="text" placeholder="Name" class="contact__input" name="name">
+            <input type="email" placeholder="E-Mail" class="contact__input">
+            <input type="submit" value="submit" class="contact__submit" name="mail">
+          </div>
         </div>
       </form>
       <div class="footer__content">
@@ -235,12 +261,6 @@
           </div>
         </div>
       </div>
-      <!--
-      <i class="fas fa-phone-alt"></i>
-      <i class="fas fa-envelope-open-text"></i>
-      <i class="far fa-clock"></i>
-      <i class="fas fa-chevron-down"></i>
-      -->
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

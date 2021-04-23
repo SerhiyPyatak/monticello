@@ -579,6 +579,24 @@ body * {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
+.header__shevron {
+  display: block;
+  border: 1px solid #cbddfb;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px;
+  transition: padding-top 0.35s ease-in-out;
+}
+.header__shevron:hover {
+  padding-top: 15px;
+}
 
 .projects {
   width: 100%;
@@ -950,6 +968,50 @@ body * {
   width: 100%;
   height: 210px;
   margin-top: 45px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.contact__author-info {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "GothamBook" !important;
+  color: #2c4058;
+}
+.contact__contragent-info {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.contact__glyph {
+  color: #7e5aff;
+}
+.contact__input {
+  width: 100%;
+  height: 40px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #d5d9de;
+  font-family: "GothamBook" !important;
+}
+.contact__input:focus {
+  border-bottom: 2px solid #2c4058;
+  color: #2c4058;
+}
+.contact__submit {
+  width: 140px;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: "GothamBook" !important;
+  color: #2c4058;
 }
 
 .footer {
