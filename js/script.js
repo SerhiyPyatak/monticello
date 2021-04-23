@@ -39,3 +39,17 @@ $(document).ready(function () {
 
   L.marker([40.712775, -74.005973], { icon: contactIcon }).addTo(contactMap);
 });
+
+/*$(function() {
+  $(".panel").css({"height":$(window).height()});
+  $.scrollify({
+    section:"section"
+  });
+
+
+  $(".header__shevron").click(function(e) {
+    e.preventDefault();
+    $.scrollify("move",$(this).attr("href"));
+  });
+});
+*/

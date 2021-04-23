@@ -521,6 +521,10 @@ blockquote, q {
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -591,11 +595,14 @@ body * {
   align-items: center;
   color: #fff;
   text-decoration: none;
-  padding: 7px;
+  padding: 3px;
   transition: padding-top 0.35s ease-in-out;
 }
 .header__shevron:hover {
   padding-top: 15px;
+  background-color: rgba(97, 114, 136, 0.7);
+  border: 2px solid lightskyblue;
+  color: lightskyblue;
 }
 
 .projects {
