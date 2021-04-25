@@ -683,3 +683,18 @@ body * {
         text-decoration:    none;
     }
 }
+
+.section-bullets {
+    font-family:            'GothamBook';
+    text-transform:         uppercase;
+    font-size:              14px;
+    color:                  rgb(44, 64, 88);
+
+    & > li {
+        margin:                 15px 0;
+    }
+
+    & li a:after {
+        background-color:   rgb(44, 64, 88);
+    }
+}

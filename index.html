@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monticello</title>
     <script src="https://kit.fontawesome.com/e3e1481f16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/section-scroll.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link
@@ -18,31 +19,31 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header" id="aboutus">
+    <header class="header scrollable-section" id="scrollto-section-1" data-section-title="About Us">
       <div class="header__navbar">
         <div class="header__logo"></div>
         <nav class="header__nav">
           <ul class="navigation">
             <li class="navigation__item">
-              <a href="#aboutus">
+              <a href="#scrollto-section-1">
                 <i class="fas fa-circle"></i>
                 &nbsp;about us
               </a>
             </li>
             <li class="navigation__item">
-              <a href="#projects">
+              <a href="#scrollto-section-2">
                 <i class="far fa-circle"></i>
                 &nbsp;projects
               </a>
             </li>
             <li class="navigation__item">
-              <a href="#news-section">
+              <a href="#scrollto-section-3">
                 <i class="far fa-circle"></i>
                 &nbsp;news
               </a>
             </li>
             <li class="navigation__item">
-              <a href="#contact-map">
+              <a href="#scrollto-section-5">
                 <i class="far fa-circle"></i>
                 &nbsp;contact
               </a>
@@ -73,12 +74,12 @@
         <h2 class="header__slogan">we makes the world's beautiful every day</h2>
       </div>
 
-      <a class="header__shevron" href="#projects">
+      <a class="header__shevron" href="#scrollto-section-2">
         <i class="fas fa-chevron-down"></i>
       </a>
     </header>
     <main>
-      <section class="projects" id="projects">
+      <section class="projects scrollable-section" id="scrollto-section-2" data-section-title="Projects">
         <div class="projects__hero">
           <div class="projects__rule-divider rule-divider"></div>
           <h2 class="projects__title">what we do</h2>
@@ -136,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="news" id="news-section">
+      <section class="news scrollable-section" id="scrollto-section-3" data-section-title="News">
         <div class="news__rule-divider rule-divider"></div>
         <h2 class="news__title">latest news</h2>
         <div class="news__slider slider">
@@ -232,7 +233,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery scrollable-section" id="scrollto-section-4" data-section-title="Gallery">
         <div class="gallery__hero">
           <div class="gallery__rule-divider rule-divider"></div>
           <h2 class="gallery__title">gallery</h2>
@@ -254,7 +255,7 @@
       </section>
       <section class="contact" id="contact-map"></section>
     </main>
-    <footer class="footer" id="footer-contact">
+    <footer class="footer scrollable-section" id="scrollto-section-5" data-section-title="Contact">
       <form class="contact__form" action="" method="GET">
         <div class="contact__hero">
           <div class="contact__rule-divider rule-divider"></div>
@@ -314,6 +315,7 @@
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.section-scroll.js"></script>
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="

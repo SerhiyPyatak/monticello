@@ -2,7 +2,7 @@
 
 let MAP_ICON;
 $(document).ready(function () {
-  console.log(window.location);
+  //console.log(window.location);
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
     MAP_ICON = '../images/contact/map-pin.png';
   } else {
@@ -38,4 +38,10 @@ $(document).ready(function () {
   });
 
   L.marker([40.712775, -74.005973], { icon: contactIcon }).addTo(contactMap);
+
+  $('body').sectionScroll({
+    topOffset: -40,
+    scrollDuration: 0.5
+  });
+
 });
