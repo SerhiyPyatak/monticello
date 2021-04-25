@@ -561,6 +561,14 @@ body * {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.header__nav {
+  width: 670px;
+  height: 100%;
+}
+.header__socialnets {
+  width: 170px;
+  height: 100%;
+}
 .header__hero {
   display: flex;
   flex-direction: column;
@@ -1055,11 +1063,32 @@ body * {
 .footer__socialnets {
   width: 170px;
   height: 100%;
+}
+
+.navigation {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.navigation__item {
+  display: block;
+}
+.navigation__item > a {
+  font-family: "GothamBook";
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.socnets {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer__social-logo {
+.socnets__social-logo {
   width: 43px;
   height: 43px;
   border: 1px solid #afa3fe;
@@ -1067,7 +1096,12 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.socnets__social-logo > * {
   color: #fff;
+}
+.socnets > a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -72,6 +72,16 @@ body * {
         background-repeat:  no-repeat;
     }
 
+    &__nav {
+        width:              670px;
+        height:             100%;
+    }
+
+    &__socialnets {
+        width:              170px;
+        height:             100%;
+    }
+
     &__hero {
         display:            flex;
         flex-direction:     column;
@@ -627,10 +637,33 @@ body * {
     &__socialnets {
         width:              170px;
         height:             100%;
-        display:            flex;
-        align-items:        center;
-        justify-content:    space-between;
     }
+}
+
+.navigation {
+    display:                flex;
+    height:                 100%;
+    justify-content:        center;
+    align-items:            center;
+    gap:                    60px;
+
+    &__item {
+        display:                block;
+
+        & > a {
+            font-family:            'GothamBook';
+            text-transform:         uppercase;
+            font-size:              14px;
+            text-decoration:        none;
+            color:                  #fff;
+        }
+    }
+}
+
+.socnets {
+    display:            flex;
+    align-items:        center;
+    justify-content:    space-between;
 
     &__social-logo {
         width:              43px;
@@ -640,6 +673,13 @@ body * {
         display:            flex;
         justify-content:    center;
         align-items:        center;
+    }
+
+    &__social-logo > * {
         color:              #fff;
+    }
+
+    & > a {
+        text-decoration:    none;
     }
 }

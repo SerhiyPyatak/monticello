@@ -18,10 +18,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="aboutus">
       <div class="header__navbar">
         <div class="header__logo"></div>
-        <nav class="header__nav navigation"></nav>
+        <nav class="header__nav">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="#aboutus">about us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#projects">projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#news-section">news</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact-map">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__socialnets socnets">
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="header__hero">
@@ -92,7 +124,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="news" id="news-section">
         <div class="news__rule-divider rule-divider"></div>
         <h2 class="news__title">latest news</h2>
         <div class="news__slider slider">
@@ -210,7 +242,7 @@
       </section>
       <section class="contact" id="contact-map"></section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer-contact">
       <form class="contact__form" action="" method="GET">
         <div class="contact__hero">
           <div class="contact__rule-divider rule-divider"></div>
@@ -249,16 +281,22 @@
             Copyrights &copy; 2017 Monticello &Tab;|&Tab; Made with <i class="fas fa-heart"></i> by Ga Huy
           </p>
         </div>
-        <div class="footer__socialnets">
-          <div class="footer__social-logo">
-            <i class="fab fa-facebook-f"></i>
-          </div>
-          <div class="footer__social-logo">
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div class="footer__social-logo">
-            <i class="fab fa-instagram"></i>
-          </div>
+        <div class="footer__socialnets socnets">
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div class="socnets__social-logo">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
         </div>
       </div>
     </footer>
