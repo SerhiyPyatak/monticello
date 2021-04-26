@@ -1,0 +1,126 @@
+.projects {
+    width:                  100%;
+    height:                 auto;
+
+    &__hero {
+        width:              100%;
+        height:             270px;
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+        gap:                40px;
+    }
+
+    &__title {
+        text-transform:     uppercase;
+        font-family:        $gothamBold1;
+        font-size:          33px;
+        color:              rgb(44, 64, 88);
+    }
+
+    &__rule-divider {
+        border:             1px solid rgb(44, 64, 88);
+    }
+
+    &__card {
+        width:              100%;
+        height:             540px;
+        margin-bottom:      140px;
+        display:            flex;
+    }
+
+    &__outline {
+        height:             100%;
+        width:              50%;
+        display:            flex;
+
+        &:nth-child(even) {
+            justify-content:    flex-end;
+        }
+    }
+
+    &__imgarea {
+        width:              630px;
+        height:             470px;
+
+        &_even {
+            background-color: rgb(85, 183, 255);
+        }
+
+        &_odd {
+            background-color: rgb(126, 90, 255);
+        }
+    }
+
+    &__photo {
+        position:           relative;
+        width:              630px;
+        height:             auto;
+
+        &_even {
+            top:                70px;
+            left:               215px;
+        }
+
+        &_odd {
+            top:                70px;
+            right:               215px;
+        }
+    }
+
+    &__description {
+        width:              50%;
+        height:             100%;
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    flex-start;
+        padding:            70px;
+
+        &:nth-child(odd) {
+            align-items:    flex-end;
+        }
+    }
+
+    &__slogan {
+        font-size:          18px;
+        text-transform:     uppercase;
+        color:              rgb(44, 64, 88);
+        font-family:        $gothamBook;
+        margin-top:         58px;
+        width:              470px;
+    }
+
+    &__name {
+        font-family:        $gothamBold1;
+        font-size:          33px;
+        text-transform:     uppercase;
+        color:              rgb(44, 64, 88);
+        margin-top:         15px;
+        width:              470px;
+    }
+
+    &__overwiev {
+        width:              470px;
+        margin-top:         36px;
+        font-family:        $gothamLight;
+        line-height:        30px;
+        color:            rgb(123, 129, 138);
+        font-size:          18px;
+    }
+
+    &__linkbutton-container {
+        width:              470px;
+        margin-top:         40px;
+        height:             50px;
+    }
+
+    &__location {
+        margin-top:         60px;
+        width:              470px;
+        font-family:        $gothamBook;
+        font-size:          17px;
+        font-style:         italic;
+        color:              rgb(44, 64, 88);
+    }
+} 

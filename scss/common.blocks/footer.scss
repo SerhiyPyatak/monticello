@@ -1,0 +1,40 @@
+.footer {
+    width:                  100%;
+    height:                 525px;
+    background-image:       url('../../images/footer/footer-babckground-image-with-gradient.png');
+    background-size:        cover;
+    background-repeat:      no-repeat;
+    display:                flex;
+    justify-content:        center;
+    align-items:            center;
+
+    &__logo {
+        width:              250px;
+        height:             auto;
+    }
+
+    &__content {
+        width:              770px;
+        height:             170px;
+        display:            flex;
+        justify-content:    space-between;
+    }
+
+    &__info {
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    flex-end;
+        gap:                40px;
+    }
+
+    &__text {
+        font-family:            $gothamBook;
+        color:                  #fff;
+        font-size:              12px;
+    }
+
+    &__socialnets {
+        width:              170px;
+        height:             100%;
+    }
+} 
