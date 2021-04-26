@@ -730,6 +730,7 @@ body * {
     z-index:                1;
     right:                  -50px;
     top:                    calc(50% - 50px);
+    cursor:                 pointer;
 }
 
 .arrow-next {
@@ -741,4 +742,5 @@ body * {
     z-index:                1;
     left:                   -50px;
     top:                    calc(50% - 50px);
+    cursor:                 pointer;
 }
