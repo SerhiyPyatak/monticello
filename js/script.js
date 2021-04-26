@@ -3,6 +3,9 @@
 let MAP_ICON;
 $(document).ready(function () {
   //console.log(window.location);
+  const prevArrow = '<div class="arrow-previous"></div>';
+  const nextArrow = '<div class="arrow-next"></div>';
+
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
     MAP_ICON = '../images/contact/map-pin.png';
   } else {
@@ -15,6 +18,8 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 4000,
     dots: true,
+    nextArrow,
+    prevArrow
   });
 
   let contactMap = L.map('contact-map').setView([40.6571222, -73.8429989], 12);
@@ -42,5 +47,4 @@ $(document).ready(function () {
     topOffset: -40,
     scrollDuration: 0.5
   });
-
 });
