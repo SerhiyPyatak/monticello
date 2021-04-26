@@ -15,7 +15,6 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 4000,
     dots: true,
-    //infinite: true,
   });
 
   let contactMap = L.map('contact-map').setView([40.6571222, -73.8429989], 12);
