@@ -60,12 +60,12 @@
 
         &_even {
             top:                70px;
-            left:               215px;
+            left:               25%;
         }
 
         &_odd {
             top:                70px;
-            right:               215px;
+            right:               25%;
         }
     }
 
@@ -124,3 +124,197 @@
         color:              rgb(44, 64, 88);
     }
 } 
+
+@media(max-width: 1600px) {
+    .projects {
+        &__photo_even {
+            top: 70px;
+            left: 10%;
+        }
+
+        &__photo_odd {
+            top: 70px;
+            right: 10%;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .projects {
+        &__card {
+            height: 480px;
+        }
+
+        &__imgarea {
+            width: 570px;
+            height: 427px;
+        }
+
+        &__photo {
+            width: 570px;
+        }
+    }
+}
+
+@media(max-width:1200px) {
+    .projects {
+        &__description {
+            padding: 20px;
+        }
+
+        &__card {
+            height: 440px;
+        }
+
+        &__imgarea {
+            width: 450px;
+            height: 337px;
+        }
+
+        &__photo {
+            width: 450px;
+        }
+
+        &__slogan {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media(max-width:1020px) {
+    .projects {
+        &__photo_even, &__photo_odd {
+            top: 15%;
+        }
+
+        &__imgarea {
+            width: 350px;
+            height: 263px;
+        }
+
+        &__photo {
+            width: 350px;
+        }
+
+        &__slogan {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        &__name {
+            font-size: 25px;
+            width: 100%;
+        }
+
+        &__overwiev {
+            margin-top: 20px;
+            line-height: 28px;
+            font-size: 15px;
+            width: 100%;
+        }
+
+        &__linkbutton-container {
+            margin-top: 20px;
+            height: 40px;
+            width: 100%;
+        }
+
+        &__location {
+            margin-top: 30px;
+            font-size: 13px;
+            width: 100%;
+        }
+
+        &__card {
+            height: 250px;
+        }
+
+        &__hero {
+            height: 200px;
+        }
+
+        .linkbutton {
+            height: 39px;
+            width: 130px;
+            font-size: 13px;
+            padding: 12px 12px;
+        }
+    }
+}
+
+@media(max-width:815px) {
+    .projects {
+        &__card {
+            flex-direction: column;
+            height: auto;
+            margin-bottom: 36px;
+        }
+
+        &__outline {
+            height: 60%;
+            width: 100%;
+        }
+
+        &__photo_even {
+            top: 7%;
+            left: 5%;
+        }
+
+        &__photo_odd {
+            top: 7%;
+            right: 6%;
+        }
+
+        &__outline:nth-child(even) {
+            order: -1;
+        }
+
+        &__description {
+            width: 75%;
+
+            &:nth-child(odd) {
+                text-align: end;
+                margin-left: 25%;
+
+                & > .projects__linkbutton-container {
+                    display:flex;
+                    justify-content:flex-end;
+                }
+            }
+        }
+
+        &__hero {
+            height: 170px;
+            gap: 25px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+
+@media(max-width:430px) {
+    .projects {
+        &__description {
+            width: 80%;
+        }
+
+        &__imgarea {
+            width: 250px;
+            height: 187px;
+        }
+
+        &__photo {
+            width: 250px;
+        }
+
+        &__card {
+            padding-right: 10px;
+        }
+
+        &__name {
+            font-size: 18px;
+        }
+    }
+}
