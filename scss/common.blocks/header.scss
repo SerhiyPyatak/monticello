@@ -84,3 +84,155 @@
         }
     }
 } 
+
+@media(max-width: 1500px) {
+    .header {
+        .navigation {
+            gap: 40px;
+        }
+
+        &__nav {
+            width: 560px;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .header {
+        &__nav {
+            width: 510px;
+        }
+
+        &__navbar {
+            padding: 0px 50px;
+        }
+    }
+}
+
+@media(max-width: 1075px) {
+    .header {
+        & .navigation {
+            gap: 20px;
+        }
+
+        &__navbar {
+            padding: 0px 20px;
+        }
+
+        &__nav {
+            width: 420px;
+        }
+    }
+}
+
+@media(max-width: 975px) {
+    .header {
+        height: 600px;
+        gap: 110px;
+
+        &__nav, .navigation {
+            display: none;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__slogan {
+            font-size: 11px;
+            letter-spacing: 6px;
+        }
+
+        &__navbar {
+            height: 100px;
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .header {
+        height: 550px;
+
+        &__title {
+            font-size: 30px;
+            letter-spacing: 13px;
+        }
+
+        &__slogan {
+            font-size: 10px;
+            letter-spacing: 4px;
+        }
+    }
+}
+
+@media(max-width: 530px) {
+    .header {
+        &__logo {
+            width: 150px;
+            background-size: 100% auto;
+        }
+
+        .socnets__social-logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__shevron {
+            width: 35px;
+            height: 35px;
+        }
+
+        &__socialnets {
+            width: 125px;
+        }
+
+        &__title {
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        &__hero {
+            gap: 25px;
+        }
+
+        &__slogan {
+            display:        block;
+            width:          80%;
+            margin:         auto;
+            text-align:     center;
+            line-height:    20px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .header {
+        &__title {
+            font-size: 18px;
+            letter-spacing: 8px;
+        }
+    }
+}
+
+@media(max-width: 330px) {
+    .header {
+        &__title {
+            font-size: 15px;
+            letter-spacing: 6px;
+        }
+
+        &__slogan {
+            line-height: 15px;
+        }
+
+        .socnets__social-logo {
+            font-size: 10px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &__socialnets {
+            width: 95px;
+        }
+    }
+}
