@@ -24,7 +24,7 @@
     }
 
     &__album {
-        width:              1170px;
+        width:              100%;
         height:             440px;
         display:            flex;
         gap:                12px;
@@ -52,8 +52,8 @@
     }
 
     &__mosaic {
-        width:              285px;
-        height:             215px;
+        width:              48%;
+        height:             48%;
         background-size:    cover;
         background-repeat:  no-repeat;
     }
@@ -82,3 +82,82 @@
 #gallery-bottom-left {
     background-image:       url('../../images/gallery/bottom-left.png');
 } 
+
+@media(max-width: 1300px) {
+    .gallery {
+        &__album {
+            height: 410px;
+        }
+    }
+}
+
+@media(max-width: 1160px) {
+    .gallery {
+        padding: 100px 120px;
+        &__album {
+            height: 410px;
+        }
+    }
+}
+
+@media(max-width: 980px) {
+    .gallery {
+        height: 780px;
+        &__album {
+            height: 300px;
+        }
+    }
+}
+
+@media(max-width: 870px) {
+    .gallery {
+        padding: 65px 80px;
+        height: 670px;
+
+        &__album {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media(max-width: 785px) {
+    .gallery {
+        padding: 45px 40px;
+        height: auto;
+
+        &__linkbutton-container {
+            margin-top: 45px;
+        }
+
+        &__album {
+            flex-direction: column;
+            height: 895px;
+        }
+
+        &__left-pane, &__right-pane {
+            width:100%;
+        }
+    }
+}
+
+@media(max-width: 530px) {
+    .gallery {
+        &__album {
+            height: 680px;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .gallery {
+        padding: 30px 30px;
+        
+        &__album {
+            height: 440px;
+        }
+
+        &__right-pane {
+            gap: 7px;
+        }
+    }
+}
