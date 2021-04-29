@@ -15,12 +15,51 @@ $(document).ready(function () {
   $('.news__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     dots: true,
     nextArrow,
-    prevArrow
+    prevArrow,
+    responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 2,
+          //slidesToScroll: 1,
+          //dots: true
+        }
+      },
+      {
+        breakpoint: 910,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 430,
+        settings: "unslick"
+      },
+
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
+
+  /*$(window).resize(function(){
+    if ($(window).width() >= 532){	
+      // do something here
+      initSlick();
+    }	
+  });
+  */
 
   let contactMap = L.map('contact-map').setView([40.6571222, -73.8429989], 12);
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {

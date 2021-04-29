@@ -967,7 +967,7 @@ blockquote, q {
   font-size: 34px;
 }
 .news__slider {
-  width: 1410px;
+  width: 95%;
   margin-top: 100px;
 }
 .news__slide {
@@ -1073,6 +1073,114 @@ blockquote, q {
   background-image: url("../../images/news/news5-author.png");
 }
 
+@media (max-width: 1490px) {
+  .slide {
+    height: 470px;
+  }
+  .slide__photo {
+    height: 200px;
+  }
+  .slide__header {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .slide__text {
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .slide__author {
+    margin-top: 30px;
+  }
+  .slide__author-info {
+    gap: 8px;
+  }
+  .slide__author-name {
+    font-size: 13px;
+  }
+  .slide__publication {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1350px) {
+  .news__slide {
+    margin: 0 28px;
+  }
+}
+@media (max-width: 970px) {
+  .news {
+    height: auto;
+    padding: 75px 77px;
+  }
+  .news__slider {
+    width: 95%;
+    margin-top: 70px;
+  }
+}
+@media (max-width: 910px) {
+  .news__slider {
+    width: 75%;
+  }
+}
+@media (max-width: 790px) {
+  .slick-track {
+    width: 95%;
+  }
+}
+@media (max-width: 590px) {
+  .slide__photo {
+    height: 160px;
+  }
+
+  .slick-dots li {
+    margin: 0 8px !important;
+  }
+}
+@media (max-width: 530px) {
+  .news__slider {
+    width: 90%;
+    margin-top: 50px;
+  }
+  .news__title {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+  .news .slick-track {
+    width: 95%;
+  }
+  .news .slide {
+    height: 360px;
+  }
+  .news .slide__header {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .news .slide__author-photo {
+    display: none;
+  }
+  .news .slide__photo {
+    display: none;
+  }
+  .news .slide__text {
+    line-height: 23px;
+    font-size: 10px;
+  }
+  .news .slide__author-name {
+    font-size: 9px;
+  }
+  .news .slide__publication {
+    font-size: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .news {
+    padding: 75px 0px;
+  }
+  .news__slide {
+    margin: 5px 0;
+    height: 190px !important;
+    width: 95%;
+  }
+}
 .gallery {
   width: 100%;
   height: 1000px;
