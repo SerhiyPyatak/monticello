@@ -1404,6 +1404,158 @@ blockquote, q {
   color: #2c4058;
 }
 
+@media (max-width: 1400px) {
+  .contact__form {
+    top: 4780px;
+  }
+}
+@media (max-width: 1200px) {
+  .contact__form {
+    top: 4700px;
+  }
+}
+@media (max-width: 1020px) {
+  .contact__form {
+    top: 4250px;
+  }
+}
+@media (max-width: 980px) {
+  .contact__form {
+    top: 4030px;
+  }
+}
+@media (max-width: 975px) {
+  .contact__form {
+    top: 3830px;
+  }
+}
+@media (max-width: 970px) {
+  .contact__form {
+    top: 3593px;
+  }
+}
+@media (max-width: 870px) {
+  .contact__form {
+    top: 3480px;
+    width: 670px;
+  }
+  .contact__title {
+    font-size: 25px;
+  }
+  .contact__author-info, .contact____contragent-info, .contact__submit {
+    font-size: 14px;
+  }
+}
+@media (max-width: 815px) {
+  .contact__form {
+    top: 3850px;
+  }
+}
+@media (max-width: 785px) {
+  .contact__form {
+    top: 4420px;
+  }
+}
+@media (max-width: 730px) {
+  .contact__form {
+    top: 4444px;
+    width: 600px;
+  }
+}
+@media (max-width: 720px) {
+  .contact__form {
+    top: 4395px;
+  }
+}
+@media (max-width: 640px) {
+  .contact__form {
+    top: 4363px;
+    padding: 45px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 500px;
+    width: 300px;
+  }
+  .contact__form-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__author-info {
+    gap: 20px;
+    width: 80%;
+  }
+  .contact__contragent-info {
+    gap: 15px;
+    width: 75%;
+  }
+  .contact__submit {
+    width: 100px;
+    height: 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 587px) {
+  .contact__form {
+    top: 4390px;
+  }
+}
+@media (max-width: 545px) {
+  .contact__form {
+    top: 4419px;
+  }
+}
+@media (max-width: 530px) {
+  .contact__form {
+    top: 4048px;
+  }
+}
+@media (max-width: 434px) {
+  .contact__form {
+    top: 4075px;
+  }
+}
+@media (max-width: 430px) {
+  .contact__form {
+    top: 3720px;
+  }
+}
+@media (max-width: 429px) {
+  .contact__form {
+    top: 4470px;
+  }
+}
+@media (max-width: 418px) {
+  .contact__form {
+    top: 4500px;
+  }
+}
+@media (max-width: 400px) {
+  .contact__form {
+    top: 4240px;
+  }
+}
+@media (max-width: 390px) {
+  .contact__form {
+    top: 4269px;
+  }
+}
+@media (max-width: 360px) {
+  .contact__form {
+    top: 4296px;
+  }
+}
+@media (max-width: 330px) {
+  .contact__form {
+    top: 4325px;
+  }
+}
+@media (max-width: 328px) {
+  .contact__form {
+    top: 4352px;
+  }
+}
 .footer {
   width: 100%;
   height: 525px;
