@@ -1592,6 +1592,48 @@ blockquote, q {
   height: 100%;
 }
 
+@media (max-width: 820px) {
+  .footer__content {
+    width: 680px;
+  }
+}
+@media (max-width: 820px) {
+  .footer__content {
+    width: 530px;
+  }
+}
+@media (max-width: 610px) {
+  .footer__logo {
+    width: 180px;
+  }
+  .footer__content {
+    width: 350px;
+  }
+  .footer .socnets {
+    margin-top: 35px;
+  }
+  .footer .socnets__social-logo {
+    width: 25px;
+    height: 25px;
+  }
+  .footer .socnets__social-logo > i {
+    font-size: 12px;
+  }
+  .footer__info {
+    gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .footer__logo {
+    width: 140px;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+  .footer__content {
+    width: 90%;
+  }
+}
 .slick-dots {
   margin: -30px 0 !important;
 }
