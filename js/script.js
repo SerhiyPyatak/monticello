@@ -48,16 +48,15 @@ $(document).ready(function () {
   const nextArrow = '<div class="arrow-next"></div>';
 
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
-    MAP_ICON = '../images/contact/map-pin.png';
+    //MAP_ICON = '../images/contact/map-pin.png';
     IMG_PATH = '../images/';
+    
     //imgLoader('../images/');
   } else {
-    MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
+    //MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
     IMG_PATH = [window.location.origin, window.location.pathname, 'images/'].join('');
     //imgLoader(`${window.location.origin}${window.location.pathname}images/`);
   };
-  console.log(`IMG_PATH = ${IMG_PATH}`);
-  imgLoader(IMG_PATH);
 
   $('.news__slider').slick({
     slidesToShow: 3,
@@ -99,6 +98,10 @@ $(document).ready(function () {
       // instead of a settings object
     ]
   });
+
+  console.log(`IMG_PATH = ${IMG_PATH}`);
+  MAP_ICON = [IMG_PATH, 'contact/map-pin.png'].join('');
+  imgLoader(IMG_PATH);
 
   /*$(window).resize(function(){
     if ($(window).width() >= 532){	
