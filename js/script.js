@@ -33,7 +33,11 @@ const imgLoader = (PATH) => {
   $('#gallery-bottom-left').css("background-image", `url(${PATH}gallery/bottom-left.png)`);
 
   //--- load footer section images -----
-  $('.footer').css("background-image", `url(${PATH}/footer/footer-babckground-image-with-gradient.png)`);
+  $('.footer').css("background-image", `url(${PATH}footer/footer-babckground-image-with-gradient.png)`);
+
+  //--- load arrow images for slider -----
+  $('.arrow-previous').css("background-image", `url(${PATH}news/after-arrow.png`);
+  $('.arrow-next').css("background-image", `url(${PATH}news/before-arrow.png`);
 };
 
 $(document).ready(function () {

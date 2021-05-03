@@ -35,7 +35,6 @@
     &__left-pane {
         height:             100%;
         width:              49%;
-        //background-image:   url('../../images/gallery/panorama.png');
         background-size:    cover;
         background-repeat:  no-repeat;
         display:            flex;
@@ -66,24 +65,6 @@
         justify-content:    center;
     }
 }
-
-/*
-#gallery-top-left {
-    background-image:       url('../../images/gallery/top-left.png');
-}
-
-#gallery-top-right {
-    background-image:       url('../../images/gallery/top-right.png');
-}
-
-#gallery-bottom-right {
-    background-image:       url('../../images/gallery/bottom-right.png');
-}
-
-#gallery-bottom-left {
-    background-image:       url('../../images/gallery/bottom-left.png');
-} 
-*/
 
 @media(max-width: 1300px) {
     .gallery {

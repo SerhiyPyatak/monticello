@@ -1,7 +1,6 @@
 .news {
     width:                  100%;
     height:                 1035px;
-    //background-image:       url('../../images/news/news-background-with-gradient.png');
     background-size:        cover;
     background-repeat:      no-repeat;
     padding:                138px 105px;
@@ -99,48 +98,6 @@
         color:                  rgb(65, 183, 255)
     }
 }
-
-/*
-.first-slide {
-    background-image: url('../../images/news/news1.png');
-}
-
-.second-slide {
-    background-image: url('../../images/news/news2.png');
-}
-
-.third-slide {
-    background-image: url('../../images/news/news3.png');
-}
-
-.fourth-slide {
-    background-image: url('../../images/news/news4.png');
-}
-
-.fifth-slide {
-    background-image: url('../../images/news/news5.png');
-}
-
-#author-first {
-    background-image: url('../../images/news/news1-author.png');
-}
-
-#author-second {
-    background-image: url('../../images/news/news2-author.png');
-}
-
-#author-third {
-    background-image: url('../../images/news/news3-author.png');
-}
-
-#author-fourth {
-    background-image: url('../../images/news/news4-author.png');
-}
-
-#author-fifth {
-    background-image: url('../../images/news/news5-author.png');
-}
-*/
 
 @media(max-width: 1490px) {
     .slide {
