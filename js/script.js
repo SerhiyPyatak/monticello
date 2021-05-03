@@ -8,6 +8,7 @@ let MAP_ICON;
 //loaded on the localhost or deployed on the 
 //Internet hosting place (GitPages for example)
 const imgLoader = (PATH) => {
+  console.log(PATH);
   //--- load header section images -----
   $('.header').css("background-image", `url(${PATH}header/header-background-with-gradient.png)`);
   $('.header__logo').css("background-image", `url(${PATH}header/logo.png)`);
@@ -41,7 +42,7 @@ const imgLoader = (PATH) => {
 };
 
 $(document).ready(function () {
-  //console.log(window.location);
+  console.log(window.location);
   const prevArrow = '<div class="arrow-previous"></div>';
   const nextArrow = '<div class="arrow-next"></div>';
 
