@@ -9,7 +9,7 @@ let IMG_PATH;
 //loaded on the localhost or deployed on the 
 //Internet hosting place (GitPages for example)
 const imgLoader = (PATH) => {
-  console.log(PATH);
+  //console.log(PATH);
   //--- load header section images -----
   $('.header').css("background-image", `url(${PATH}header/header-background-with-gradient.png)`);
   $('.header__logo').css("background-image", `url(${PATH}header/logo.png)`);
@@ -34,6 +34,9 @@ const imgLoader = (PATH) => {
   $('#gallery-bottom-right').css("background-image", `url(${PATH}gallery/bottom-right.png)`);
   $('#gallery-bottom-left').css("background-image", `url(${PATH}gallery/bottom-left.png)`);
 
+  //--- load contact section images -----
+  $('.contact').css("background-image", `url(${PATH}contact/contact-backgnd.png)`);
+
   //--- load footer section images -----
   $('.footer').css("background-image", `url(${PATH}footer/footer-babckground-image-with-gradient.png)`);
 
@@ -43,19 +46,14 @@ const imgLoader = (PATH) => {
 };
 
 $(document).ready(function () {
-  console.log(window.location);
+  //console.log(window.location);
   const prevArrow = '<div class="arrow-previous"></div>';
   const nextArrow = '<div class="arrow-next"></div>';
 
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
-    //MAP_ICON = '../images/contact/map-pin.png';
     IMG_PATH = '../images/';
-    
-    //imgLoader('../images/');
   } else {
-    //MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
     IMG_PATH = [window.location.origin, window.location.pathname, 'images/'].join('');
-    //imgLoader(`${window.location.origin}${window.location.pathname}images/`);
   };
 
   $('.news__slider').slick({
@@ -99,7 +97,7 @@ $(document).ready(function () {
     ]
   });
 
-  console.log(`IMG_PATH = ${IMG_PATH}`);
+  //console.log(`IMG_PATH = ${IMG_PATH}`);
   MAP_ICON = [IMG_PATH, 'contact/map-pin.png'].join('');
   imgLoader(IMG_PATH);
 
