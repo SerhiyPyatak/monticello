@@ -50,8 +50,8 @@ $(document).ready(function () {
     MAP_ICON = '../images/contact/map-pin.png';
     imgLoader('../images/');
   } else {
-    MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
-    imgLoader(`${window.location.origin}${window.location.pathname}images/`);
+    MAP_ICON = `${window.location.origin}${window.location.pathname}blob/main/images/contact/map-pin.png`;
+    imgLoader(`${window.location.origin}${window.location.pathname}blob/main/images/`);
   };
 
   $('.news__slider').slick({
