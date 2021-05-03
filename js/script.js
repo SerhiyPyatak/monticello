@@ -1,6 +1,7 @@
 'use strict';
 
 let MAP_ICON;
+let IMG_PATH;
 
 //This function dedicated to ensure correct loading
 //of the images to the webpage. Problem is, path to
@@ -48,11 +49,15 @@ $(document).ready(function () {
 
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
     MAP_ICON = '../images/contact/map-pin.png';
-    imgLoader('../images/');
+    IMG_PATH = '../images/';
+    //imgLoader('../images/');
   } else {
     MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
-    imgLoader(`${window.location.origin}${window.location.pathname}images/`);
+    IMG_PATH = [window.location.origin, window.location.pathname, 'images/'].join('');
+    //imgLoader(`${window.location.origin}${window.location.pathname}images/`);
   };
+  console.log(`IMG_PATH = ${IMG_PATH}`);
+  imgLoader(IMG_PATH);
 
   $('.news__slider').slick({
     slidesToShow: 3,
