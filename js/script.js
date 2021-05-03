@@ -1,6 +1,41 @@
 'use strict';
 
 let MAP_ICON;
+
+//This function dedicated to ensure correct loading
+//of the images to the webpage. Problem is, path to
+//the image file is differ relative to was page
+//loaded on the localhost or deployed on the 
+//Internet hosting place (GitPages for example)
+const imgLoader = (PATH) => {
+  //--- load header section images -----
+  $('.header').css("background-image", `url(${PATH}header/header-background-with-gradient.png)`);
+  $('.header__logo').css("background-image", `url(${PATH}header/logo.png)`);
+
+  //--- load news section images -----
+  $('.news').css("background-image", `url(${PATH}news/news-background-with-gradient.png)`);
+  $('.first-slide').css("background-image", `url(${PATH}news/news1.png)`);
+  $('.second-slide').css("background-image", `url(${PATH}news/news2.png)`);
+  $('.third-slide').css("background-image", `url(${PATH}news/news3.png)`);
+  $('.fourth-slide').css("background-image", `url(${PATH}news/news4.png)`);
+  $('.fifth-slide').css("background-image", `url(${PATH}news/news5.png)`);
+  $('#author-first').css("background-image", `url(${PATH}news/news1-author.png)`);
+  $('#author-second').css("background-image", `url(${PATH}news/news2-author.png)`);
+  $('#author-third').css("background-image", `url(${PATH}news/news3-author.png)`);
+  $('#author-fourth').css("background-image", `url(${PATH}news/news4-author.png)`);
+  $('#author-fifth').css("background-image", `url(${PATH}news/news5-author.png)`);
+
+  //--- load gallery section images -----
+  $('.gallery__left-pane').css("background-image", `url(${PATH}gallery/panorama.png)`);
+  $('#gallery-top-left').css("background-image", `url(${PATH}gallery/top-left.png)`);
+  $('#gallery-top-right').css("background-image", `url(${PATH}gallery/top-right.png)`);
+  $('#gallery-bottom-right').css("background-image", `url(${PATH}gallery/bottom-right.png)`);
+  $('#gallery-bottom-left').css("background-image", `url(${PATH}gallery/bottom-left.png)`);
+
+  //--- load footer section images -----
+  $('.footer').css("background-image", `url(${PATH}/footer/footer-babckground-image-with-gradient.png)`);
+};
+
 $(document).ready(function () {
   //console.log(window.location);
   const prevArrow = '<div class="arrow-previous"></div>';
@@ -8,14 +43,16 @@ $(document).ready(function () {
 
   if(window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
     MAP_ICON = '../images/contact/map-pin.png';
+    imgLoader('../images/');
   } else {
     MAP_ICON = `${window.location.origin}${window.location.pathname}images/contact/map-pin.png`;
+    imgLoader(`${window.location.origin}${window.location.pathname}images/`);
   };
 
   $('.news__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     dots: true,
     nextArrow,

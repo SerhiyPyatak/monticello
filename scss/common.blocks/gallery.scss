@@ -35,7 +35,7 @@
     &__left-pane {
         height:             100%;
         width:              49%;
-        background-image:   url('../../images/gallery/panorama.png');
+        //background-image:   url('../../images/gallery/panorama.png');
         background-size:    cover;
         background-repeat:  no-repeat;
         display:            flex;
@@ -67,6 +67,7 @@
     }
 }
 
+/*
 #gallery-top-left {
     background-image:       url('../../images/gallery/top-left.png');
 }
@@ -82,6 +83,7 @@
 #gallery-bottom-left {
     background-image:       url('../../images/gallery/bottom-left.png');
 } 
+*/
 
 @media(max-width: 1300px) {
     .gallery {
